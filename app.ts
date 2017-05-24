@@ -43,7 +43,7 @@ mongoose.connect(connectionString).then(() => {
       console.error("Failed to enter Car :"+ err.message);
       console.dir(err);
     })
-  }
+  });
 });
 // redirect 404 to home for the sake of AngularJS client-side routes
 app.get('/*', function(req, res, next) {
